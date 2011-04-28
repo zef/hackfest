@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'AldotheApacheRegular';
+    src: url('aldotheapache-webfont.eot');
+    src: url('aldotheapache-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aldotheapache-webfont.woff') format('woff'),
+         url('aldotheapache-webfont.ttf') format('truetype'),
+         url('aldotheapache-webfont.svg#AldotheApacheRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color:#efefef; }
+
+a, a:active, a:visited {
+  color:#fff;
+  text-shadow:1px 1px #000; }
+
+#wrapper {
+  width:100%;
+  height:100%;
+  text-align:center; }
+
+#container {
+  width:960px;
+  margin:0 auto;
+  text-align:left; }
+
+header {
+  padding-bottom:20px;
+  border-bottom:3px dotted #444; }
+
+header h1 {
+  font-family:'AldotheApacheRegular';
+  font-size:70px;
+  line-height:65px;
+  margin: 20px 0;
+  text-shadow: 2px 2px #333;
+  color:#999; }
+
+.javascript {
+  color:#0099ff; }
+
+#waves, #zombie_whale, #hipster_octopus, #big_squid, #star_starfish, #drunk_clam {
+  background:url('sprite.png'); }
+
+#waves{
+  float:left; clear:both;
+  width:100%; height:100px;
+  background-position:0 0;
+  background-repeat:repeat-x;
+  margin-top:50px; }
+
+#ocean {
+  position:relative;
+  float:left; clear:both;
+  width:100%; height:500px;
+  background-color:#0099ff; }
+
+#zombie_whale {
+  position:absolute;
+  top:20px; left:20px;
+  width:200px; height:96px;
+  background-position:0 -186px; 
+  -webkit-animation-name: swim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 900000000;
+  -webkit-animation-direction: alternate;
+}
+#zombie_whale.fancy {
+  background-position:0 -382px;
+}
+#bird {
+  display:none;
+}
+.shake {
+  -webkit-animation-name: swim;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 900000000;
+  -webkit-animation-direction: alternate;
+}
+.choices {
+  width:200px;
+  height:230px;
+  display:none;
+  background: rgba(0,0,0,.5);
+  position:absolute;
+  left: 800px;
+  top: 10px;
+}
+.choices span {
+  width: 80%;
+  float: left;
+  clear: both;
+  background: rgba(206, 104, 104, .5);
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor:pointer;
+}
+.choices span:hover {
+  background: rgba(235,120,120,.5);
+  cursor:pointer;
+}
+.fakediv {
+  display:none !important;
+}
+#hipster_octopus {
+  position:absolute;
+  top:300px; left:20px;
+  width:144px; height:144px;
+  background-position:-303px -593px; }
+
+#big_squid {
+  position:absolute;
+  top:20px; right:20px;
+  width:140px; height:295px;
+  background-position:-250px -190px; }
+
+#star_starfish {
+  position:absolute;
+  top:200px; right:250px;
+  width:70px; height:70px;
+  background-position:-228px -489px; }
+
+#drunk_clam {
+  position:absolute;
+  top:380px; right:50px;
+  width:130px; height:100px;
+  background-position:-310px -484px; }
+
+#message_form {
+  position:absolute;
+  top:152px; left:200px;
+  background-color:#fff;
+  border:1px solid #999;
+  padding:20px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  display:none; }
+
+label,input,textarea {
+  float:left; clear:both;
+  width:100%; }
+
+
+@-webkit-keyframes swim {
+ 0% {
+   -webkit-transform: rotate(10deg);
+ }
+ 33% {
+   -webkit-transform: rotate(20deg);
+ }
+ 67% {
+   -webkit-transform: rotate(10deg);
+ }
+ 100% {
+   -webkit-transform: rotate(0deg);
+ }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  33% {
+    -webkit-transform: rotate(20deg);
+  }
+  67% {
+    -webkit-transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+#speech {
+  display:none;
+  position: absolute;
+  background: whiteSmoke;
+  width: 180px;
+  height: 80px;
+  left: 20px;
+  top: 85px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px gray inset;
+  padding: 10px;
+  font-size: 20px;
+  z-index:1000;
+}
+#speech:after {
+  content: '.';
+  text-indent:-99999em;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid whiteSmoke;
+  position:absolute;
+  left: 125px;
+  bottom: -20px;
+  -webkit-box-shadow: 3px 3px 3px gray inset;
+}
