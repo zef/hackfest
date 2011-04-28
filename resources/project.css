@@ -61,7 +61,15 @@ header h1 {
   position:absolute;
   top:20px; left:20px;
   width:200px; height:96px;
-  background-position:0 -186px; }
+} 
+
+#zombie_whale.whale_default {
+    background-position:0 -186px;
+}
+
+#zombie_whale.whale_message {
+    background-position:0 -491px;
+}
 
 #hipster_octopus {
   position:absolute;
@@ -89,10 +97,20 @@ header h1 {
 
 #message_form {
   position:absolute;
-  top:200px; left:200px;
+  top:200px; left:300px;
   background-color:#fff;
   border:1px solid #999;
   padding:20px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  display:none; }
+
+.message_box {
+  position:absolute;
+  background-color:#fff;
+  border:1px solid #999;
+  padding:10px;
+  margin:20px;
   -webkit-border-radius:10px;
   -moz-border-radius:10px;
   display:none; }
