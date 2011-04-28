@@ -1,0 +1,102 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>QuickLeft Hackfest :: April 2011 :: JavaScript</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="resources/style.css">
+
+  <style>
+  </style>
+
+</head>
+
+<body>
+  <img src="http://s3.amazonaws.com/gif.ly/gifs/490/original.gif?1294726461" />
+  <h1>we thought the code below was kinda cool until we saw this guy!</h1>
+  <pre>
+/**
+*  _   _    _    ____ _  _______ _____ ____ _____ 
+* | | | |  / \  / ___| |/ /  ___| ____/ ___|_   _|
+* | |_| | / _ \| |   | ' /| |_  |  _| \___ \ | |  
+* |  _  |/ ___ \ |___| . \|  _| | |___ ___) || |  
+* |_| |_/_/   \_\____|_|\_\_|   |_____|____/ |_|  
+*
+* QuickLeft Hackfest
+* April 27 2011
+*
+* JavaScript
+* Written by, Nico Valencia
+*
+* @module HACKFEST
+*/
+
+(function( window ){
+
+  var HACKFEST = {
+
+    init: function () {
+
+      // Begin your mad JavaScript in here!
+      HACKFEST.bindEvents();
+
+    },
+
+    bindEvents: function () {
+
+      $('#zombie_whale').bind( 'click' , function(e){
+        HACKFEST.helpers.moveTo( '#zombie_whale', '#hipster_octopus', function(){
+          HACKFEST.form.fadeIn(800, function(){
+            HACKFEST.to.val('#big_squid');
+            HACKFEST.message.val('Yo dawg you have AIDS.');
+            HACKFEST.form.trigger('submit');
+          });
+        });
+      } );
+
+      HACKFEST.form.bind( 'submit' , function(e){
+        e.preventDefault();
+        HACKFEST.helpers.sendMessage();
+      } );
+
+    },
+
+    helpers: {
+
+      moveTo: function moveTo( animal , destination , callback ){
+        $(animal).animate($(destination).position(),2000,callback);
+      },
+      
+      sendMessage: function sendMessage( callback ){        
+        HACKFEST.form.fadeOut( 800 , function(){
+          var destination = HACKFEST.to.val();
+          HACKFEST.helpers.moveTo( '#zombie_whale' , destination , function(){ 
+            HACKFEST.form.css( $(destination).position() );
+            HACKFEST.form.fadeIn(800, function(){
+              HACKFEST.to.val('');
+              HACKFEST.message.val('');              
+            });
+          } );
+        } );
+      },
+      
+
+    },
+
+    friends: [ "#big_squid" , "#star_starfish" , "#drunk_clam" ],
+    form: $('#message_form'),
+    to: $('#to'),
+    message: $('#message')
+
+  };
+
+  $( document ).ready( HACKFEST.init );
+
+  })( this );
+</pre>
+</body>
+</html>

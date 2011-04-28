@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>QuickLeft Hackfest :: April 2011 :: JavaScript</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="resources/style.css">
+  <link rel="stylesheet" href="resources/project.css">
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="container">
+      <header>
+        <h1>QuickLeft Hackfest :: April 2011<br/><span class="javascript">JavaScript</span></h1>
+      </header>
+    </div>
+    <div id="waves"></div>
+    <div id="ocean">
+      <div id="zombie_whale"></div>
+      <div id="hipster_octopus"></div>
+      <div id="big_squid"></div>
+      <div id="star_starfish"></div>
+      <div id="drunk_clam"></div>
+      <div id="message_form" class="box">
+		  <h1>Get local recommendations from your ocean friends!</h1>
+          <label>Where:</label>
+		  <input id="place" type="text" value="boulder, co" />
+          <label>What are you looking for?</label>
+          <input id="query" type="text" value="italian"></input>
+          <label>Ask:</label>
+		  <!--<input id="to" type="text" name="to" />-->
+		  <select id="toSelect">
+			  <option value="hipster_octopus">Hipster Octopus</option>
+			  <option value="big_squid">Big Squid</option>
+			  <option value="star_starfish">Star Starfish</option>
+			  <option value="drunk_clam">Drunk Clam</option>
+		  </select>
+		  <input id="go" type="button" value="Go!!!" />
+      </div>
+	  <div id="response" class="box">
+	  </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="resources/jquery-1.5.2.js"></script>
+  <script type="text/javascript" src="thepower.js"></script>
+  <script type="text/javascript" src="rjs.1.4.js"></script>
+  <script type="text/javascript" src="rjs-dom.2.0.js"></script>
+
+</body>
+</html>
+
+
