@@ -17,3 +17,5 @@ The goal is to have fun and learn something. Challenge yourself. If you don't kn
 ## Remote / Offsite
 
 Do you live far away, like coldhead? Join us in IRC or on our video live stream chat (check blog post for details). Since everything is submitted over GitHub pull requests, we will be able to present and judge yours as well! We will ship you out your trophy and prize if you dominate the in-officers!
+
+archived april 2011
