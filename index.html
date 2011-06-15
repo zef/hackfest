@@ -1,78 +1,55 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-       Remove this if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title></title>
-  <meta name="author" content="Quick Left">
-  <meta name="description" content="">
-
-  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
-       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
-  <script src="js/libs/respond.min.js"></script>
+  <title>June 2011 - API Madness</title>
+  
+  <style type="text/css" media="screen">
+    body { font-family: Helvetica; } /* obvi */
+    header, section { margin: 0 auto; width: 600px; color: #666; }
+    a { text-decoration: none; color: #333; background: #eee; padding: 1px 3px; }
+  </style>
 </head>
 
 <body>
 
   <div id="container">
     <header>
-      <h1>Quick Left Hackfest May 2011</h1>
+      <h1>API Mashup Smashup</h1>
+      <h2>Quick Left Hackfest June 2011</h2>
     </header>
-    <div id="main" role="main">
-      <p>your task is simple. build a chat bot. any type of chat bot. it can do anything, just keep it (sorta) SFW, plz</p>
-      <p>the bot can live in IRC or Campfire or "in the cloud" (that's what stupid people call the internet). IRC bots should go to #quickleft, campfire bots should go <a href="https://quickleft.campfirenow.com/9b250">here</a></p>
-      <p>you can use any resources you want. you can use any language you want (even offesive languages).</p>
-      <p><a href="http://developer.37signals.com/campfire/">campfire api</a> <a href="https://github.com/gf3/IRC-js">gf3's irc.js</a> <a href="https://github.com/Nerdmaster/ruby-irc-yail">ruby-irc-yail</a></p>
-      <p>when you're done, submit a pull request <a href="https://github.com/quickleft/hackfest">here</a></p>
-      <p>awesome prizes are on the line.</p>
-      <p>winners will be announced 9pm MST. if you live far away (like coldhead), that's cool too. just be present in campfire or IRC at 9.</p>
-      <p>happy hacking.</p>
-    </div>
-    <footer>
+    <section>
+      <p>Welcome.
+      <p>This month we are focusing on public API integration/mashup/utility/debauchery.<br />
+        Services that group various services' APIs like <a href="http://mashery.com">Mashery</a>, <a href="http://3scales.net">3scale</a>, and <a href="http://apigee.com">Apigee</a> are becoming more and more prevalent and automatically lend themselves to API mashup goodness-- that is squashing up a couple different services via their API to make a (better?) standalone product.
+      <p>So, leveraging one of the above company's tools (have you seen <a href="https://apigee.com/console">Apigee's console</a>?!), or your own knowledge of independent APIs, let the smashing good time begin!
+      <h3>The Rules:</h3>
+      <ul>
+        <li>Use a least 2 services
+        <li>3 gets you bonus points
+        <li>Language/platform agnostic
+        <li>Team size: 1-4
+        <li>Pairs strongly encouraged
+        <li>No paid access APIs
+      </ul>
+      <h3>Process:</h3>
+      <ol>
+        <li>Fork
+        <li>Make
+        <li>Pull request
+      </ol>
+      <p><small>Need help? Ask any Quick Lefter.</small>
+      <h3>Judgement:</h3>
+      <p>Judged entirely on <font color="red">radness<!-- like the font tag! --></font>.<br />
+        Your pair/team/self will be given 5 minutes to present (our platform or yours), in the order the pull requests were received, in front of our entirely unbiased and completely qualified panel.
+      <p>Hard code stop is at 9pm, so get to nomming the JSON!
+    </section>
+  </div>
 
-    </footer>
-  </div> <!--! end of #container -->
-
-
-  <!-- JavaScript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js">\x3C/script>')</script>
 
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
-  <!-- end scripts-->
-
-	
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 
 </body>
 </html>
