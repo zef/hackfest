@@ -188,7 +188,7 @@ body.error {background: #FF3342; }
 body.error #error {display:block; }
 
 
-#container figure {float:left; position:relative; margin: 1em 10em 0 0; text-align:center; }
+#container figure {float:left; position:relative; margin: 1em 10em 0 2em; text-align:center; }
 #container figure.flt-right { float: right; margin: 1em 0 50em; }
 #container section { float:left; clear:both; padding: 0 0 2em 0; }
 #container section.bordered { border-bottom: 1px solid #999; width: 940px;}
