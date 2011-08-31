@@ -173,6 +173,7 @@ em {font-style:italic;}
 #container h1 { border-bottom:2px solid #ccc; font-size: 22px; margin:15px 0; }
 #container h2 { padding-bottom:1em; font-size: 18px; }
 #container h3 { padding: 2em 0 1em; font-size: 18px; }
+#container h4 { padding: 1em 0 .5em; font-size: 14px; }
 #container p { padding-bottom:1em;}
 #container .gal { margin-bottom:20px;}
 #container pre { float:left; width: 388px; border: 1px solid #DEDEDE!important;background-color: ghostWhite!important; font-size: 12px!important; margin:0 0 12px 0;}
