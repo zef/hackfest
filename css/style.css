@@ -169,8 +169,10 @@ em {font-style:italic;}
 #container header { position:relative; }
 #container header p { padding-bottom:20px; font-style:italic; }
 #container .refresh { position:absolute; top:4px; right:0; display:none; }
-#container h1 { font-size:20px; border-bottom:2px solid #ccc; margin:15px 0; }
-#container h2 { padding-bottom:1em;}
+#container h1, #container h2, #container h3 { -moz-text-shadow: 1px 1px 1px #CCCCCC; -webkit-text-shadow: 1px 1px 1px #CCCCCC; text-shadow: 1px 1px 1px #CCCCCC; }
+#container h1 { border-bottom:2px solid #ccc; font-size: 22px; margin:15px 0; }
+#container h2 { padding-bottom:1em; font-size: 18px; }
+#container h3 { padding: 2em 0 1em; font-size: 18px; }
 #container p { padding-bottom:1em;}
 #container .gal { margin-bottom:20px;}
 #container pre { float:left; width: 388px; border: 1px solid #DEDEDE!important;background-color: ghostWhite!important; font-size: 12px!important; margin:0 0 12px 0;}
@@ -186,19 +188,20 @@ body.error {background: #FF3342; }
 body.error #error {display:block; }
 
 
+#container figure {float:left; position:relative; margin: 1em 10em 0 0; text-align:center; }
+#container figure.flt-right { float: right; margin: 1em 0 50em; }
+#container section { float:left; clear:both; padding: 0 0 2em 0; }
+#container section.bordered { border-bottom: 1px solid #999; width: 940px;}
+#container section#resources, #container section#resources article { width: 920px; }
+#container section article { float:left; width:450px; padding: 0 20px 20px 0;}
 
-/*canvas {*/
-     /*-moz-border-radius: 20px; */
-  /*-webkit-border-radius: 20px; */
-          /*border-radius: 20px; */
-/*}*/
+section h2 {
+  font-size: 18px;
+}
 
-.ql_zoom_container { float:left; position:relative;}
-
-#container figure {float:left; position:relative; margin: 1em 3em 0 0; text-align:center; }
-#container section { float:left; clear:both; padding-bottom:2em;}
-#container section article { float:left; width:450px; padding-right:20px;}
-
+section h3 {
+  font-size: 16px;
+}
 
 #output {float:left; clear:both; position:fixed; top:18px; left:400px; background:#fff; z-index:1000; padding: 0 1em;}
 
