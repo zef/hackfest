@@ -1,6 +1,7 @@
 require "mygem/version"
 require "mygem/repo"
 require "open-uri"
+require "json"
 
 module Mygem
 
