@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "mygem/version"
+require "githubforks/version"
 
 Gem::Specification.new do |s|
-  s.name        = "mygem"
-  s.version     = Mygem::VERSION
-  s.authors     = ["Hacker"]
+  s.name        = "githubforks"
+  s.version     = Githubforks::VERSION
+  s.authors     = ["Zef Houssney", "Sean Mcnamara"]
   s.email       = ["hacker@quickleft.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{TODO: Play with github forks}
+  s.description = %q{TODO: Play with github forks}
 
-  s.rubyforge_project = "mygem"
+  s.rubyforge_project = "githubforks"
 
   s.files = Dir["{lib}/**/*"] + ["Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
