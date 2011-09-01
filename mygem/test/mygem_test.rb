@@ -1,7 +1,13 @@
 require 'test_helper'
 
 class MygemTest < MiniTest::Unit::TestCase
+  def setup
+    @repo = Repo.new('/thing')
+  end
+
   def test_truth
-    assert_equal 1, 1
+    # puts Mygem.test_repo('junk')
+    # @repo
+    assert true
   end
 end
