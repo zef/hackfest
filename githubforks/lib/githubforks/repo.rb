@@ -21,10 +21,10 @@ class Repo
     @repo_info['url']
   end
 
-  # private
+  private
 
   def set_repo_data
-    @repo_info = JSON.parse(open(base_api_url).read)
+    @repo_info = JSON.parse(open(base_api_url).read)['repository']
   end
 
   def set_fork_data

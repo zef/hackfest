@@ -6,7 +6,7 @@ class GithubforksTest < MiniTest::Unit::TestCase
   end
 
   def test_repo_includes_data
-    assert @repo.owner == 'quickleft'
+    assert @repo.url == 'https://github.com/quickleft/hackfest'
   end
   
 end
