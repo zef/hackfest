@@ -2,12 +2,11 @@ require 'test_helper'
 
 class GithubforksTest < MiniTest::Unit::TestCase
   def setup
-    @repo = Repo.new('quickleft', 'hackfest', :include_forks => true)
+    @repo = Repo.new('quickleft', 'hackfest', :include_forks => false)
   end
 
   def test_repo_includes_data
-    puts @repo.inspect
-    # assert @repo.
-    assert true
+    assert @repo.owner == 'quickleft'
   end
+  
 end
